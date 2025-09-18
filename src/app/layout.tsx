@@ -24,7 +24,7 @@
 import "./globals.css";
 import Header from "@/components/Header";
 import ErrorBoundary from "@/components/ErrorBoundary";
-
+import { SpeedInsights } from "@vercel/speed-insights/next";
 export const metadata = {
   title: "Todo Pro",
   description: "Next.js + Supabase Todo App",
