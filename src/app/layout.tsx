@@ -28,6 +28,9 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 export const metadata = {
   title: "Todo Pro",
   description: "Next.js + Supabase Todo App",
+  icons: {
+    icon: "/favicon.png",
+  },
 };
 
 export default function RootLayout({
