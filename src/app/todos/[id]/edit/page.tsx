@@ -5,6 +5,7 @@ import { useRouter, useParams } from "next/navigation";
 import { supabase } from "@/lib/supabase";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
+export const dynamic = "force-dynamic";
 
 export default function EditTodoPage() {
   const params = useParams();
@@ -28,7 +29,7 @@ export default function EditTodoPage() {
         .single();
       if (error) {
         alert(error.message);
-        router.push("/");
+        router.push("/todos");
         return;
       }
       setTitle(todo.title);

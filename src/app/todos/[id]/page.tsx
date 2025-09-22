@@ -4,6 +4,7 @@ import { useRouter, useParams } from "next/navigation";
 import { supabase } from "@/lib/supabase";
 import { Todo } from "@/types/todo";
 import { Button } from "@/components/ui/button";
+export const dynamic = "force-dynamic";
 
 export default function TodoDetailPage() {
   const params = useParams();
